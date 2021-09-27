@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luas dan Keliling Kubus"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panjang Sisi"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/nilai1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/luas_persegi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/luas"
+            android:onClick="luasKubus"/>
+
+        <Button
+            android:id="@+id/keliling_persegi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/luas_persegi"
+            android:text="@string/keliling"
+            android:onClick="kelilingKubus"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

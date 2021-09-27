@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="@string/heading"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/persegi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/persegi"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:onClick="showPersegi"/>
+
+        <Button
+            android:id="@+id/segitiga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/segitiga"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@+id/persegi"
+            android:onClick="showSegitiga"/>
+
+        <Button
+            android:id="@+id/lingkaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lingkaran"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@+id/segitiga"
+            android:onClick="showLingkaran"/>
+
+        <Button
+            android:id="@+id/kubus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kubus"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@+id/lingkaran"
+            android:onClick="showKubus"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

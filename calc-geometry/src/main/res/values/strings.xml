@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HitungLuasKeliling</string>
+    <string name="heading">Aplikasi Penghitung Luas dan Keliling</string>
+    <string name="persegi">Persegi</string>
+    <string name="segitiga">Segitiga</string>
+    <string name="lingkaran">Lingkaran</string>
+    <string name="kubus">Kubus</string>
+    <string name="nilai_1">Nilai 1</string>
+    <string name="nilai_2">Nilai 2</string>
+    <string name="luas">Luas</string>
+    <string name="lk_persegi">Luas dan Keliling Persegi</string>
+    <string name="nilai_3">Nilai 3</string>
+    <string name="keliling">Keliling</string>
+</resources>

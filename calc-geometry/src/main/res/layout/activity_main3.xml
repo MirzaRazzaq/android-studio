@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menghitung Luas Segitiga"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nilai_1"/>
+
+            <EditText
+                android:id="@+id/nilai1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nilai_2"/>
+
+            <EditText
+                android:id="@+id/nilai2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/hasil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/luas_persegi"
+                    android:gravity="center"/>
+                <Button
+                    android:id="@+id/luas_persegi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/luas"
+                    android:onClick="luasSegitiga"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menghitung Keliling Segitiga"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nilai_1"/>
+
+            <EditText
+                android:id="@+id/nilai3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nilai_2"/>
+
+            <EditText
+                android:id="@+id/nilai4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nilai_3"/>
+
+            <EditText
+                android:id="@+id/nilai5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/hasil_keliling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/keliling_persegi"
+                    android:gravity="center"/>
+                <Button
+                    android:id="@+id/keliling_persegi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keliling"
+                    android:onClick="kelilingSegitiga"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
