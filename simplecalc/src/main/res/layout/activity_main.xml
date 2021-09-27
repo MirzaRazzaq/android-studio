@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nilai_1"/>
+
+    <EditText
+        android:id="@+id/edt_n1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nilai_2"/>
+
+    <EditText
+        android:id="@+id/edt_n2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        tools:ignore="LabelFor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah"
+            android:onClick="onAdd"/>
+
+        <Button
+            android:id="@+id/sub_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/add_btn"
+            android:text="@string/kurang"
+            android:layout_marginLeft="5dp"
+            android:onClick="onSub"/>
+
+        <Button
+            android:id="@+id/div_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_btn"
+            android:text="@string/bagi"
+            android:onClick="onDiv"/>
+
+        <Button
+            android:id="@+id/mul_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub_btn"
+            android:layout_toEndOf="@+id/div_btn"
+            android:text="@string/kali"
+            android:layout_marginLeft="5dp"
+            android:onClick="onMul"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
