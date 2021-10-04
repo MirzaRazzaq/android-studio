@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/ednama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ednama"
+                android:text="Alamat"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/edalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alamat"/>
+
+            <TextView
+                android:id="@+id/kota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edalamat"
+                android:text="Kota"
+                android:textSize="30sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_kota"
+                android:layout_below="@+id/kota"
+                android:layout_width="match_parent"
+                android:spinnerMode="dropdown"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/spinner_kota"/>
+
+            <DatePicker
+                android:id="@+id/ctanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:layout_below="@+id/tanggal"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ctanggal"
+                android:text="Email"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/edemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"/>
+
+            <TextView
+                android:id="@+id/jkelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textSize="30sp"
+                android:layout_below="@+id/edemail"/>
+
+            <RadioGroup
+                android:id="@+id/radiojk"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/jkelamin"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/hobi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Hobi"
+                android:layout_below="@+id/radiojk"/>
+
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Musik"
+                android:layout_below="@+id/hobi"/>
+
+            <CheckBox
+                android:id="@+id/check2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Koding"
+                android:layout_below="@+id/check1"/>
+
+            <CheckBox
+                android:id="@+id/check3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bersepeda"
+                android:layout_below="@+id/check2"/>
+
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:layout_below="@+id/check3"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
