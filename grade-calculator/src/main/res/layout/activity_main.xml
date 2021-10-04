@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:text="NIM    : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ednim"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/nim" />
+
+    <TextView
+        android:id="@id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_below="@+id/nim"
+        android:text="Nama : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ednama"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ednim"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/nama" />
+
+    <TextView
+        android:id="@+id/nptugas"
+        android:layout_width="63dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/nama"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/edtugas"
+        android:text="30% : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/eduas"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nputs"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/nuas" />
+
+    <TextView
+        android:id="@+id/nuas"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/nputs"
+        android:layout_marginTop="0dp"
+        android:text="N. UAS : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nuts"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/nptugas"
+        android:layout_marginTop="0dp"
+        android:text="N. UTS : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/eduts"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nptugas"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/ntugas" />
+
+    <TextView
+        android:id="@+id/nputs"
+        android:layout_width="63dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/nptugas"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/eduts"
+        android:text="35% : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edputs"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edptugas"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/nputs" />
+
+    <EditText
+        android:id="@+id/edpuas"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edputs"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/npuas" />
+
+    <TextView
+        android:id="@+id/npuas"
+        android:layout_width="63dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/nputs"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/eduas"
+        android:text="35% : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtugas"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/ntugas" />
+
+    <TextView
+        android:id="@+id/ntugas"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/nama"
+        android:layout_marginTop="15dp"
+        android:text="N. Tugas : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nakhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nuas"
+        android:layout_marginTop="28dp"
+        android:text="N. Akhir  : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/npakhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npuas"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/nakhir" />
+
+    <TextView
+        android:id="@+id/nhuruf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nakhir"
+        android:layout_marginTop="40dp"
+        android:text="N. Huruf  : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nphuruf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npakhir"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/nhuruf" />
+
+    <TextView
+        android:id="@+id/npredikat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhuruf"
+        android:layout_marginTop="40dp"
+        android:text="N. Huruf  : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nppredikat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nphuruf"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/npredikat" />
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npredikat"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="57dp"
+        android:onClick="hitung"
+        android:text="Hitung" />
+
+    <EditText
+        android:id="@+id/edptugas"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/nptugas" />
+
+</RelativeLayout>
