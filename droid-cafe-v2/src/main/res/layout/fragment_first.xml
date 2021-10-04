@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Droid Cafe"
+        android:textSize="35sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0sp"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:id="@+id/sub_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose your Menu"
+        android:paddingStart="20dp"
+        android:paddingEnd="0sp"
+        android:paddingTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/donut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/donut_circle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:id="@+id/desc_donut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donuts are glazed and sprinkled with candy"
+            android:layout_toRightOf="@+id/donut"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/ice_cream"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/icecream_circle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/donut"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Froyo is premium self-serve frozen yogurt"
+            android:layout_toRightOf="@+id/ice_cream"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/donut"
+            />
+
+        <ImageView
+            android:id="@+id/froyo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/froyo_circle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ice_cream"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ice cream sandwiches have chocolate wafers and vanilla filling"
+            android:layout_toRightOf="@+id/ice_cream"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ice_cream"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
